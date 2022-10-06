@@ -21,6 +21,12 @@
     padding: 10px;
 }
 
+@media screen and (max-width: 334px) {
+    .txt__sobre {
+        font-size: 1.3em;
+    }
+}
+
 @media screen and (min-width: 600px) {
     .txt__sobre {
         font-size: 1.8em;
