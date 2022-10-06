@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('header.css');
+@import url('sobre.css');
+@import url('projetos.css');
+@import url('skills.css');
+@import url('contato.css');
+
+:root {
+    --fundo-header: #0f193b;
+    --fundo-menu: #1d1e24;
+    --fundo-projetos: #0A1128;
+    --fundo-skills: #05221a;
+    --fundo-contato: #1b0001;
+    --preto: #000;
+    --branco: #ffffff;
+    --roxo: #5f3a92;
+
+    --fonte-padrao: 'Boogaloo', cursive;
+    --fonte-titulo: 'Chewy', cursive;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}

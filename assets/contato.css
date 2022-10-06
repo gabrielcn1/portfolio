@@ -1,0 +1,80 @@
+#contato {
+    height: 100vh;
+    background-color: var(--fundo-contato);
+}
+
+.titulo__contato {
+    font-family: var(--fonte-padrao);
+    text-shadow: 4px 4px 1px var(--preto);
+    font-size: 3em;
+    width: 140px;
+    padding: 15px;
+    border-bottom: 3px solid var(--branco);
+    color: var(--branco);
+}
+
+.txt__contato {
+    font-family: var(--fonte-padrao);
+    font-size: 2em;
+    color: var(--branco);
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.contato__list {
+    color: var(--branco);
+    font-size: 2.2em;
+    font-family: var(--fonte-padrao);
+    list-style: none;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.contato__list li {
+    padding: 10px 0px;
+}
+
+.contato__list a {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.contato__li {
+    display: flex;
+    align-items: center;
+}
+
+.devicon-github-original, .devicon-linkedin-plain {
+    margin-right: 8px;
+}
+
+@media screen and (min-width: 600px) {
+    .txt__contato {
+        font-size: 2.2em;
+    }
+    
+    .contato__list {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .titulo__contato {
+        font-size: 4em;
+        width: 180px;
+    }
+
+    .txt__contato {
+        font-size: 2.4em;
+    }
+    
+    .contato__list {
+        font-size: 4em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contato__list {
+        font-size: 5em;
+    }
+}
