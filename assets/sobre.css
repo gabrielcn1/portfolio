@@ -29,13 +29,13 @@
 
 @media screen and (max-width: 334px) {
     .txt__sobre {
-        font-size: 1.3em;
+        font-size: 2em;
     }
 }
 
 @media screen and (min-width: 600px) {
     .txt__sobre {
-        font-size: 1.8em;
+        font-size: 3em;
     }
 }
 
@@ -46,13 +46,13 @@
     }
     
     .txt__sobre {
-        font-size: 2em;
+        font-size: 3.5em;
     }
 }
 
 @media screen and (min-width: 992px) {
     .txt__sobre {
-        font-size: 2.3em;
+        font-size: 4em;
     }
 }
 
@@ -62,8 +62,8 @@
         display: flex;
         margin: auto;
         text-align: start;
-        margin-top: 40px;
-        font-size: 2.4em;
+        margin-top: 90px;
+        font-size: 3.8em;
     }
 }
 
