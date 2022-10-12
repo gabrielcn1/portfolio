@@ -2,7 +2,62 @@
     height: 100vh;
     background-color: var(--fundo-menu);
     color: var(--branco);
+    transition: background 0.2s linear;
 }
+
+.sobre__tema {
+    position: absolute;
+    left: 90%;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.label {
+    background: rgb(0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+    height: 26px;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    height: 22px;
+    width: 22px;
+
+    transform: translateX(0);
+    transition: transform 0.2s linear;
+}
+
+.fa-sun {
+    color: #f1c40f;
+}
+
+.fa-moon {
+    color: rgb(177, 177, 177);
+}
+
+/*AQUI*/
 
 .titulo__sobre {
     font-family: var(--fonte-padrao);
@@ -15,10 +70,16 @@
 
 .txt__sobre {
     font-family: var(--fonte-padrao);
-    font-size: 1.4em;
+    font-size: 1.8em;
     line-height: 1.3em;
     margin-top: 1.2em;
     padding: 10px;
+}
+
+@media screen and (max-width: 775px){
+    .sobre__tema {
+        left: 80%;
+    }
 }
 
 @media screen and (max-height: 667px) {
