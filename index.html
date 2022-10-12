@@ -24,8 +24,18 @@
         <p class="txt__header">Estudante e futuro Desenvolvedor de Software 🧙</p>
     </header>
     <section id="sobre">
-        <h2 class="titulo__sobre">Sobre</h2>
-        <p class="txt__sobre">Olá! Sou Gabriel Costa Nunes, tenho 23 anos e sou estudante de Análise e desenvolvimento de sistemas na Estácio. No momento, busco minha primeira oportunidade na área de Desenvolvimento de Software, para assim adiquirir experiência, colocar minhas habilidades em prática e crescer profissionalmente na área da programação.</p>
+        <!--AQUI-->
+        <div class="sobre__tema">
+            <input type="checkbox" class="checkbox" id="chk" onclick="verificar()">
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+        <!--AQUI-->
+        <h2 id="sobre__titulo" class="titulo__sobre">Sobre</h2>
+        <p id="sobre__txt" class="txt__sobre">Olá! Sou Gabriel Costa Nunes, tenho 23 anos e sou estudante de Análise e desenvolvimento de sistemas na Estácio. No momento, busco minha primeira oportunidade na área de Desenvolvimento de Software, para assim adiquirir experiência, colocar minhas habilidades em prática e crescer profissionalmente na área da programação.</p>
     </section>
     <section id="projetos">
         <h2 class="projeto__titulo">Projetos</h2>
@@ -152,6 +162,10 @@
         </ul>
     </section>
 
+    <!--AQUI-->
+    <script src="assets/script.js"></script>
+    <script src="https://kit.fontawesome.com/a2440eb70b.js" crossorigin="anonymous"></script>
+    <!--AQUI-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
