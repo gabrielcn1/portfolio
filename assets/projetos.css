@@ -173,3 +173,9 @@
     }
 
 }
+
+@media screen and (max-height: 820px) {
+    .text-mobile {
+        display: none;
+    }
+}
