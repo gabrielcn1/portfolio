@@ -46,6 +46,17 @@
     text-shadow: 1px 1px 1px var(--preto);
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(100, 100, 100);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(231, 231, 231, 0.815);
+    border-radius: 10px;
+    box-shadow: 12px 12px 10px black;
+}
+
 @media screen and (min-width: 600px) {
     .list__header {
         width: 130px;
