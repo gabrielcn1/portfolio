@@ -20,8 +20,8 @@
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <h1 id="titulo">Hy! I am Gabriel</h1>
-        <p class="txt__header">Estudante e futuro Desenvolvedor de Software 🧙</p>
+        <h1 id="titulo" class="saida">Hy! I am Gabriel</h1>
+        <p class="txt__header">Estudante e futuro Desenvolvedor de Software</p>
     </header>
     <section id="sobre">
         <!--AQUI-->
@@ -183,7 +183,7 @@
     </section>
 
     <!--AQUI-->
-    <script src="assets/script.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/a2440eb70b.js" crossorigin="anonymous"></script>
     <!--AQUI-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
@@ -201,6 +201,18 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+
+        
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+            setTimeout(() => elemento.innerHTML += letra, 75 * i);
+            });
+        }
+
+        const titulo = document.querySelector('.txt__header');
+        typeWriter(titulo);
     </script>
 </body>
 </html>

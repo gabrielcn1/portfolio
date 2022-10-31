@@ -1,8 +1,8 @@
 function verificar() {
-    var chk = document.getElementById('chk')
-    var fundo = document.getElementById('sobre')
-    var titulo = document.getElementById('sobre__titulo')
-    var text = document.getElementById('sobre__txt')
+    let chk = document.getElementById('chk')
+    let fundo = document.getElementById('sobre')
+    let titulo = document.getElementById('sobre__titulo')
+    let text = document.getElementById('sobre__txt')
 
     if (chk.checked) {
         fundo.style.background = '#FCFFFD'
@@ -18,3 +18,4 @@ function verificar() {
         titulo.style.textShadow = '4px 4px 1px #000000'
     }
 }
+

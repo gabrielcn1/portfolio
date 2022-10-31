@@ -46,6 +46,23 @@
     text-shadow: 1px 1px 1px var(--preto);
 }
 
+.txt__header::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
 ::-webkit-scrollbar {
     width: 10px;
     background-color: rgb(100, 100, 100);
