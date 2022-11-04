@@ -24,6 +24,7 @@
 .contato__list {
     color: var(--branco);
     font-size: 2.2em;
+    display: inline-block;
     font-family: var(--fonte-padrao);
     list-style: none;
     margin-top: 30px;
@@ -44,8 +45,32 @@
     align-items: center;
 }
 
+.back-to-top {
+    display: block;
+    margin-top: 5%;
+    padding-left: 13px;
+
+    color: var(--branco);
+    font-size: 4.2em;
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+
+    text-shadow: 4px 4px 1px var(--preto);
+}
+
+.back-to-top:hover {
+    color: rgb(224, 224, 224);
+    text-decoration: underline;
+}
+
 .devicon-github-original, .devicon-linkedin-plain {
     margin-right: 8px;
+}
+
+@media screen and (min-width: 300px) {
+    .back-to-top {
+        font-size: 2.5em;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -54,6 +79,10 @@
     }
     
     .contato__list {
+        font-size: 3em;
+    }
+    
+    .back-to-top {
         font-size: 3em;
     }
 }
@@ -71,10 +100,18 @@
     .contato__list {
         font-size: 4em;
     }
+
+    .back-to-top {
+        font-size: 3.5em;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     .contato__list {
         font-size: 5em;
+    }
+
+    .back-to-top {
+        font-size: 4em;
     }
 }
